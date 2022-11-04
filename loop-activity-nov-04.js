@@ -60,3 +60,9 @@ console.log(users);
 
 // 3. Use a for...of loop to print the following sentence for only users who are not students.
 // "<name> is <age> years old and is a <job>."
+
+for (const user of users) {
+    if (user.job !== "student") {
+        console.log(`${user.name} is ${user.age} years old and is a ${user.job}.`)
+    }
+}
